@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./include/bulma.css" />
+    <link rel="stylesheet" href="./include/custom.css" />
+    <script src="./renderer.js"></script>
+    <script>
+        window.$ = window.jQuery = require("./include/jquery.js");
+    </script>
+  </head>
+  <body>
+    <section id="section">
+        <div class="container">
+            <h1 class="title" style="text-align:center;">Todo</h1>
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column">
+                    <div class="field has-addons">
+                        <p class="control">
+                            <input type="text" class="input" placeholder="Add Item" id="item">
+                        </p>
+                        <p class="control">
+                            <button type="button" class="button" onClick="addItem()">Add</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>#</td>
+                        <td>
+                            Item Name
+                        </td>
+                        <td>
+                            Done
+                        </td>
+                        <td>
+                            Toggle
+                        </td>
+                    </td>
+                </thead>
+                <tbody id="body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script>updateTable()</script>
+  </body>
+</html>

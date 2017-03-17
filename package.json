@@ -1,0 +1,16 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Keep track of items on your ToDo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "Frankie Primerano",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "1.4.15"
+  }
+}
